@@ -127,6 +127,18 @@ let str = "Hi ";
 console.log(str.repeat(3)); // Output: Hi Hi Hi 
 ```
 
+### 1️⃣3️⃣ `includes()` - Check if a String Contains Another String
+```javascript
+let sentence = "JavaScript is awesome";
+console.log(sentence.includes("awesome")); // Output: true
+```
+
+### 1️⃣4️⃣ `replaceAll()` - Replace All Occurrences of a String
+```javascript
+let text = "I love JavaScript. JavaScript is great!";
+console.log(text.replaceAll("JavaScript", "Python")); // Output: I love Python. Python is great!
+```
+
 ---
 
 ## 🔹 String Concatenation
@@ -155,25 +167,6 @@ Example:
 ```javascript
 let arr = ["Hello", "World", "!"].join(" ");
 console.log(arr); // Output: Hello World !
-```
-
----
-
-## 🔹 Advanced String Manipulation
-### 1️⃣ Regular Expressions (`match`, `search`, `replace`, `test`)
-```javascript
-let text = "I love JavaScript!";
-let regex = /javascript/i; // Case-insensitive search
-console.log(text.search(regex)); // Output: 7
-```
-
-### 2️⃣ Encoding & Decoding Strings
-```javascript
-let encoded = encodeURIComponent("Hello World!");
-console.log(encoded); // Output: Hello%20World%21
-
-let decoded = decodeURIComponent(encoded);
-console.log(decoded); // Output: Hello World!
 ```
 
 ---
