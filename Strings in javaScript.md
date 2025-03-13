@@ -108,6 +108,25 @@ let sentence = "The sky is blue.";
 console.log(sentence.match(/sky/)); // Output: ["sky"]
 ```
 
+### 🔟 `includes(substring)` - Check if a String Contains a Substring
+```javascript
+let sentence = "Hello, world!";
+console.log(sentence.includes("world")); // Output: true
+```
+
+### 1️⃣1️⃣ `startsWith(prefix)` & `endsWith(suffix)` - Check Start and End of a String
+```javascript
+let sentence = "Hello, world!";
+console.log(sentence.startsWith("Hello")); // Output: true
+console.log(sentence.endsWith("world!")); // Output: true
+```
+
+### 1️⃣2️⃣ `repeat(count)` - Repeat a String Multiple Times
+```javascript
+let str = "Hi ";
+console.log(str.repeat(3)); // Output: Hi Hi Hi 
+```
+
 ---
 
 ## 🔹 String Concatenation
@@ -162,7 +181,7 @@ console.log(decoded); // Output: Hello World!
 ## 🔥 Key Takeaways
 ✅ **Strings are immutable** in JavaScript.
 ✅ **Template literals (`${}`) are the best way to concatenate dynamic values.**
-✅ **Use built-in methods like `slice()`, `split()`, `replace()` for efficient string manipulation.**
+✅ **Use built-in methods like `slice()`, `split()`, `replace()`, `includes()` for efficient string manipulation.**
 ✅ **Performance considerations matter when dealing with large strings.**
 ✅ **Regular expressions can be powerful for advanced string operations.**
 
