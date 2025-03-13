@@ -38,5 +38,24 @@ JavaScript has **8** main data types, categorized as **Primitive** and **Non-Pri
   ```javascript
   let person = { name: "Sharwan", age: 21 };
   ```
+- **Array** →  A collection of ordered values, internally an object.
+```javascript
+let numbers = [10, 20, 30, 40];
+console.log(numbers[1]); // Output: 20
+```
+- **function** → A block of reusable code that can be executed. Functions are also objects in JavaScript.
+```javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+console.log(greet("Sharwan")); // Output: Hello, Sharwan!
+
+```
 
 ---
+
+## 🔥 Key Points:
+- **Objects, arrays, and functions** are all **reference types**.
+- **Arrays** are **objects** with indexed elements.
+- **Functions** are **callable objects** with special properties.
