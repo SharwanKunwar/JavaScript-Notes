@@ -94,11 +94,81 @@ console.log(`${myCurrentUser} is logged in`);
 
 ---
 
+## 4. All About basic Functions
+This section covers various function types, including function declarations, parameter handling, and return values.
+
+### Code Example:
+```javascript
+// Function Definitions
+
+// Function 01: Greeting
+function greeting(){
+    console.log("Jay Mahakal");
+}
+
+// Function 02: Blank Space
+function blankSpace(x) {
+    for(let i = 0; i < x; i++) {
+        console.log("\n");
+    }
+}
+
+// Function 03: Sum
+function sum(num01, num02) {
+    if(typeof num01 === "number" && typeof num02 === "number") {
+        return num01 + num02;
+    } else {
+        console.log("Both inputs should be numbers");
+        return "Invalid input";
+    }
+}
+
+// Function 04: Say My Name
+function sayMyName(name) {
+    return `Hey ${name}, how was it going?`;
+}
+
+// Function 05: Logging Message
+function logginMessage(userName = "user") {
+    return `${userName} just Logged in`;
+}
+
+// Function Calls
+blankSpace(2);
+greeting();
+blankSpace(2);
+greeting();
+blankSpace(1);
+
+// Sum Function Call
+let result = sum(6, 4);
+console.log(result);
+
+// Say My Name Function Call
+let say = sayMyName("Sharwan");
+console.log(say);
+
+// Logging Message Function Call
+let logMessage = logginMessage("Parbesh");
+console.log(logMessage);
+
+blankSpace(2);
+```
+### Output:
+- Logs greeting messages.
+- Inserts blank spaces dynamically.
+- Computes and logs the sum of two numbers.
+- Displays a personalized greeting message.
+- Logs user login messages.
+
+---
+
 ## Key Takeaways
 - **Rest Operator (`...x`)**: Used to collect multiple function arguments into an array.
 - **Objects in Functions**: Objects can be passed and accessed dynamically in functions.
 - **Arrays in Functions**: Arrays can be manipulated and used within functions to retrieve or modify values.
 - **Using `console.table()`**: A cleaner way to display array contents in a tabular format.
+- **Default Function Parameters**: Functions can have default values to handle missing arguments.
 
 ---
 
