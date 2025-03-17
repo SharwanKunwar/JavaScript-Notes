@@ -30,7 +30,7 @@ console.log(result02);
 
 
 ## --- This in object inside Arrow function ---
-Explanation: In the object method, the arrow function inside does not bind this to the object. Instead, it points to the global context, which leads to undefined for both this.websiteName and this.date.
+**Explanation:** In the object method, the arrow function inside does not bind this to the object. Instead, it points to the global context, which leads to undefined for both this.websiteName and this.date.
 ```javascript
 console.log("\n\nObject inside Arrow function result\n");
 const myObj = {
@@ -45,7 +45,7 @@ myObj.welcomeMessage();  // Will print 'Welcome to undefined on undefined' becau
 ```
 
 ## --- This in object ---
-Explanation: In this case, this correctly refers to the object (Human). It allows access to the properties of the object such as this.Name.
+**Explanation:** In this case, this correctly refers to the object (Human). It allows access to the properties of the object such as this.Name.
 ```javascript
 const Human = {
     Name: "Sharwan Jung Kunwar",
@@ -61,7 +61,7 @@ Human.welcomeMessage();  // Will print 'Hello Sharwan Jung Kunwar, Welcome to th
 
 
 ## --- Lexical Environment Demo ---
-Explanation: Arrow functions capture the lexical environment at the time they are defined. In this case, the arrow function inside outerFunction correctly logs outerVar, which is from the outer scope.
+**Explanation:** Arrow functions capture the lexical environment at the time they are defined. In this case, the arrow function inside outerFunction correctly logs outerVar, which is from the outer scope.
 ```javascript
 function outerFunction() {
     let outerVar = "I am from the outer function";
@@ -77,7 +77,7 @@ outerFunction();  // Will print 'I am from the outer function' because the arrow
 
 
 ## --- This in Lexical Environment ---
-Explanation: The arrow function inside the showDetails method uses this from the method's scope. So it correctly accesses the name and age properties of the object.
+**Explanation:** The arrow function inside the showDetails method uses this from the method's scope. So it correctly accesses the name and age properties of the object.
 
 ```javascript
 const lexicalExample = {
@@ -98,7 +98,7 @@ lexicalExample.showDetails();
 ```
 
 ## --- This in lexical Enviroment ---
-Explanation: In this example, the arrow function accessSome inside showDetails correctly inherits this from the object, allowing it to access this.Name and this.address.
+**Explanation:** In this example, the arrow function accessSome inside showDetails correctly inherits this from the object, allowing it to access this.Name and this.address.
 ```javascript
 const MyLexicalExample = {
     Name: "Sharwan Jung Kunwar",
